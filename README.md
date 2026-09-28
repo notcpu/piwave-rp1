@@ -108,6 +108,7 @@ spur/harmonic behavior than others. Not yet fully characterized.
   independently of any process until this is run)
 - `txmodtest.py` — two-stage test: a visual sweep, then a real
   FM-modulated audio tone
+- `rp1audiotx.py` — WORKING FM TRANSMITTER for .wav files. No RDS yet but confirmed working from 3-198MHz
 
 ## Legal / safety
 
@@ -122,6 +123,7 @@ anything beyond a short, contained test.
 - [x] Static carrier via direct register writes
 - [x] Real-time FM audio modulation (proof of concept)
 - [x] Characterize usable frequency range
+- [x] Transmit audio
 - [ ] C rewrite for clean, low-jitter modulation timing
 - [ ] Wire into piwave as a new backend
 - [ ] RDS support (PS/RT/PI), matching original PiFmRds feature set
@@ -133,3 +135,4 @@ anything beyond a short, contained test.
   original technique this builds on
 - Raspberry Pi's [`clk-rp1.c`](https://github.com/raspberrypi/linux) driver, the
   actual source of truth for every register offset used here
+- Claude Sonnet 5
