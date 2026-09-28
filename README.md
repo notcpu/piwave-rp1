@@ -87,6 +87,18 @@ Sound character varies with how "clean" the divider ratio is relative to the
 200MHz parent — rational ratios (e.g. 150MHz = 4/3) produce noticeably different
 spur/harmonic behavior than others. Not yet fully characterized.
 
+## Test 2
+
+After writing a working transmitter for audio, i tested it with the song Aerosol Can by Major Lazer. Heres the results
+```
+notcpu@sector314:~/Desktop $ sudo python3 rp1audiotx.py song.wav --freq 107.0 --rate 44100
+8120320 samples @ 44100Hz = 184.1s | carrier 107.0MHz, +-75.0kHz
+DIV_INT constant -> fast single-write path
+Done. missed deadlines: 396/8120320 (0.005%), worst lateness: 2773.3us (budget 22.7us/sample)
+Clock disabled.
+```
+Only 396 missed deadlines out of 8.12M with the worst lateness at only 2.7ms.
+
 ## Known limitations
 
 - **No MASH/sigma-delta dithering.** RP1's GPCLK fractional divider is a plain
