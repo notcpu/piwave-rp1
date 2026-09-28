@@ -143,6 +143,7 @@ anything beyond a short, contained test.
 ## Credits
 
 - [douxxtech/piwave](https://github.com/douxxtech/piwave)
+- [dpipstudio/botwave](https://github.com/dpipstudio/botwave)
 - [ChristopheJacquet/PiFmRds](https://github.com/ChristopheJacquet/PiFmRds) — the
   original technique this builds on
 - Raspberry Pi's [`clk-rp1.c`](https://github.com/raspberrypi/linux) driver, the
