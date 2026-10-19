@@ -8,7 +8,7 @@ Prereqs:
   ffmpeg -i song.mp3 -ac 1 -ar 44100 -c:a pcm_s16le song.wav   (16-bit PCM WAV)
 
 Run:
-  sudo python3 rp1_gpclk0_audio_test.py song.wav --freq 97.3 --rate 44100
+  sudo python3 tx/rp1audiotx.py song.wav --freq 97.3 --rate 44100
 
 How it works:
   * Whole file is converted UP FRONT into a table of DIV_FRAC values, so the
